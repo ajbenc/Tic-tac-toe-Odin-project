@@ -1,0 +1,53 @@
+body {
+    background: linear-gradient(to right, #a486e0, #5591eb);
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tic-tac-toe-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    max-inline-size: 300px;
+    margin: 0 auto;
+}
+
+.cell {
+    inline-size: 100px;
+    block-size: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+
+.cell:nth-child(1), .cell:nth-child(2), .cell:nth-child(3) {
+    border-block-end: 3px solid black;
+}
+
+.cell:nth-child(1), .cell:nth-child(4), .cell:nth-child(7) {
+    border-inline-end: 3px solid black;
+}
+
+.cell:nth-child(4), .cell:nth-child(5), .cell:nth-child(6) {
+    border-block-end: 3px solid black;
+}
+
+.cell:nth-child(2), .cell:nth-child(5), .cell:nth-child(8) {
+    border-inline-end: 3px solid black;
+}
+
+.cell:hover {
+    background-color: #a486e0;
+}
+
+#finalResult {
+    text-align: center;
+    margin: 50px;
+}
