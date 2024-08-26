@@ -13,9 +13,9 @@ body {
     margin: 0 auto;
 }
 
-.cell {
+#resetBtn {
     inline-size: 100px;
-    block-size: 100px;
+    block-size: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +23,25 @@ body {
     cursor: pointer;
     background-color: transparent;
     border-radius: 8px;
+    margin: 20px auto;
+    padding: 5px;
+    border: 2px solid #333;
+}
+
+
+.cell {
+    inline-size: 100px;
+    block-size: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    cursor: pointer;
     background-color: transparent;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color: transparent;
+    color: #3e2375;
 }
 
 
@@ -45,9 +63,12 @@ body {
 
 .cell:hover {
     background-color: #a486e0;
+    transform: scale(1.1); /* Enlarge on hover */
 }
 
 #finalResult {
     text-align: center;
-    margin: 50px;
+    margin: 20px;
+    font-size: 2.3rem;
+    font-weight: bold;
 }
